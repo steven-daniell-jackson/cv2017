@@ -22,12 +22,12 @@ $(document).ready(function($) {
         });
 });
 
-
-$(document).on('click', 'a', function(event){
+// Smooth Scroll
+$(document).on('click', 'a', function(event, BODY_WIDTH){
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $( $.attr(this, 'href') ).offset().top + (BODY_WIDTH > 1120 ? 0 : -100)
     }, 500);
 });
 

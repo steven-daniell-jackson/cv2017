@@ -1,0 +1,76 @@
+
+header {
+& .navbar-default {
+    background-color: $color-dark-grey;
+    border-color: #e7e7e7;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: $color-dark-grey;
+}
+
+.navbar-inverse {
+    border: 0px;
+    margin: 0px;
+    padding: 10px 0px 0px;
+
+}
+
+.navbar-right {
+ margin-right: 20px;
+}
+
+.navbar-nav>li + li:after {
+    content:"";
+    background: #ccc;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    height: 50%;
+    width: 1px;
+}
+
+.navbar-nav>li.active>a  {
+   border-bottom: 2px solid #fff;
+   padding: 10px 3px !important;
+    margin: 0 20px;
+    width: 50%;
+    background-color: $color-dark-grey !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    background-color: $color-dark-grey !important;
+}
+
+.navbar-inverse .navbar-brand {
+     background-color: $color-dark-grey !important;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background-color: $color-dark-grey;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+}

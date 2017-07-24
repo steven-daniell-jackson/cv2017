@@ -17,16 +17,38 @@ DO NOT EDIT THE CSS DIRECTLY
 /* ----------- Tablets ----------- */
 /* ----------- iPad mini, 1 and 2 ----------- */
 /* ----------- iPad 3 and 4 ----------- */
-section#workExperience .experience {
-  display: none;
+section#experienceSilder {
+  background-color: #efefef;
 }
-section#workExperience .experience.active {
-  display: block;
+
+footer {
+  background-color: #efefef;
+  padding: 20px 0;
+}
+
+.carousel-inner {
+  box-shadow: 1px 0px 20px #000 !important;
+}
+
+#slider-thumbs a.thumbnail {
+  background-color: transparent !important;
+}
+
+#slider-thumbs a.thumbnail :hover {
+  background-color: transparent !important;
+}
+
+#slider-thumbs li :hover {
+  background-color: #c3c3c3 !important;
 }
 
 h2 {
-  padding: 7% 0 30px 0;
+  padding: 1% 0 3% 0;
   margin: 0px;
+}
+
+h3 {
+  padding: 0px;
 }
 
 p {
@@ -34,24 +56,17 @@ p {
   padding: 20px 0;
 }
 
+.hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
 header {
   /* CUSTOMIZE THE NAVBAR
   -------------------------------------------------- */
   /* Special class on .container surrounding .navbar, used for positioning it into place. */
   /* Flip around the padding for proper display in narrow viewports */
-  /* CUSTOMIZE THE CAROUSEL
-  -------------------------------------------------- */
-  /* Carousel base class */
-  /* Since positioning the image, we need to help out the caption */
-  /* Declare heights because of positioning of img element */
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  /* Center align the text within the three columns below the carousel */
-  /* Featurettes
-  ------------------------- */
-  /* Thin out the marketing headings */
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
 }
 header .navbar-default {
   background-color: #222;
@@ -85,6 +100,13 @@ header .navbar-nav > li.active > a {
   padding: 10px 3px !important;
   margin: 0 20px;
   width: 50%;
+  background-color: #222 !important;
+}
+header .navbar-inverse .navbar-nav > li > a {
+  background-color: #222 !important;
+}
+header .navbar-inverse .navbar-brand {
+  background-color: #222 !important;
 }
 header .navbar-wrapper {
   position: absolute;
@@ -105,90 +127,124 @@ header .navbar-wrapper .navbar {
 header .navbar-wrapper .navbar .container {
   width: auto;
 }
-header .carousel {
+
+section {
+  padding: 30px 0;
+}
+section#workExperience .experience {
+  display: none;
+}
+section#workExperience .experience.active {
+  display: block;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  height: auto;
+}
+
+#bannerCarousel.carousel {
   height: 500px;
 }
-header .carousel-caption {
+#bannerCarousel.carousel .item {
+  height: 500px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
   z-index: 10;
   color: #fff;
 }
-header .carousel-caption, header .carousel-caption h1 {
+.carousel-caption, .carousel-caption h1 {
   color: #fff;
   font-size: 2em;
   text-shadow: 1px 1px solid #000;
 }
-header .carousel-caption, header .carousel-caption p {
+.carousel-caption, .carousel-caption p {
   color: #fff;
 }
-header .carousel .item {
-  height: 500px;
-  background-color: #777;
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 350px;
 }
-header .carousel-inner > .item > img {
+
+.carousel-inner > .item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: auto;
 }
-header .marketing .col-lg-4 {
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
-header .marketing h2 {
+
+.marketing h2 {
   font-weight: normal;
 }
-header .marketing .col-lg-4 p {
+
+.marketing .col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
-header .featurette-divider {
+
+/* Featurettes
+------------------------- */
+.featurette-divider {
   margin: 80px 0;
   /* Space out the Bootstrap <hr> more */
 }
-header .featurette-heading {
+
+/* Thin out the marketing headings */
+.featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
 @media (min-width: 768px) {
-  header {
-    /* Navbar positioning foo */
-    /* The navbar becomes detached from the top, so we round the corners */
-    /* Bump up size of carousel content */
-  }
-  header .navbar-wrapper .container {
+  /* Navbar positioning foo */
+  .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
   }
-  header .navbar-wrapper .navbar {
+
+  .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
   }
-  header .navbar-wrapper .navbar {
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
     border-radius: 4px;
   }
-  header .carousel-caption p {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
   }
-  header .featurette-heading {
+
+  .featurette-heading {
     font-size: 50px;
   }
 }
 @media (min-width: 992px) {
-  header .featurette-heading {
+  .featurette-heading {
     margin-top: 120px;
   }
 }
-
-.hide-bullets {
-  list-style: none;
-  margin-left: -40px;
-  margin-top: 20px;
-}
-
 body {
   font: "Lato", sans-serif;
   font-size: 1.2em;
@@ -207,7 +263,7 @@ h2 {
 
 h3 {
   color: #1c1c1c;
-  font-size: 1.17em;
+  font-size: 2.5em;
 }
 
 h4 {
@@ -227,12 +283,12 @@ h6 {
 
 p {
   color: #1c1c1c;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 a {
   padding: 10px 20px !important;
-  background-color: #222 !important;
+  background-color: #0c1b5b !important;
   color: #fff !important;
   -webkit-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
@@ -240,7 +296,7 @@ a {
 }
 a:hover {
   padding: #000 !important;
-  background-color: #222 !important;
+  background-color: #0c1b5b !important;
   color: #fff !important;
   -webkit-transition: all linear 0.6s;
   -o-transition: all linear 0.6s;
