@@ -1,0 +1,26 @@
+section {
+
+    &#about-me-summary {
+        .wrapper {
+           padding-top: 4%;
+        }
+
+        div {
+            .list-group {
+                padding: 20px 0px;
+                .list-group-item-heading {
+                 font-size: 1.2em;
+                }
+                .list-group-item-text {
+                    padding: 10px 0 20px 0;
+                    color: red;
+                    font-weight: 700;
+                //  @include small-margin-spacer();
+                }
+            }
+        }
+        
+    }
+
+
+}

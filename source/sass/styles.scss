@@ -62,6 +62,7 @@ footer{
 
 // Load __base.scss last so that variables are overwritten
 @import 'helper/_navbar';
-@import 'helper/_homepage';
 @import 'helper/_carousel';
+@import 'helper/_homepage';
+@import 'helper/_about-me';
 @import 'helper/_base';
