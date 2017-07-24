@@ -1,6 +1,12 @@
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+
 /* Carousel base class */
 .carousel {
   height: auto;

@@ -17,31 +17,6 @@ DO NOT EDIT THE CSS DIRECTLY
 /* ----------- Tablets ----------- */
 /* ----------- iPad mini, 1 and 2 ----------- */
 /* ----------- iPad 3 and 4 ----------- */
-section#experienceSilder {
-  background-color: #efefef;
-}
-
-footer {
-  background-color: #efefef;
-  padding: 20px 0;
-}
-
-.carousel-inner {
-  box-shadow: 1px 0px 20px #000 !important;
-}
-
-#slider-thumbs a.thumbnail {
-  background-color: transparent !important;
-}
-
-#slider-thumbs a.thumbnail :hover {
-  background-color: transparent !important;
-}
-
-#slider-thumbs li :hover {
-  background-color: #c3c3c3 !important;
-}
-
 h2 {
   padding: 1% 0 3% 0;
   margin: 0px;
@@ -56,10 +31,13 @@ p {
   padding: 20px 0;
 }
 
-.hide-bullets {
-  list-style: none;
-  margin-left: -40px;
-  margin-top: 20px;
+section:nth-child(odd) {
+  background-color: #efefef;
+}
+
+footer {
+  background-color: #efefef;
+  padding: 20px 0;
 }
 
 header {
@@ -128,6 +106,22 @@ header .navbar-wrapper .navbar .container {
   width: auto;
 }
 
+.carousel-inner {
+  box-shadow: 1px 0px 20px #000 !important;
+}
+
+#slider-thumbs a.thumbnail {
+  background-color: transparent !important;
+}
+
+#slider-thumbs a.thumbnail :hover {
+  background-color: transparent !important;
+}
+
+#slider-thumbs li :hover {
+  background-color: #c3c3c3 !important;
+}
+
 section {
   padding: 30px 0;
 }
@@ -140,6 +134,12 @@ section#workExperience .experience.active {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
+.hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
 /* Carousel base class */
 .carousel {
   height: auto;

@@ -32,33 +32,6 @@ $base-h3-font-size : 2.5em;
 $base-text-link-color: $white;
 $base-background-link-color: $blue;
 $base-link-padding: 20px 10px;
-
-
-
-section#experienceSilder {
-    background-color: #efefef;
-}
-
-footer{
-    background-color: #efefef;
-    @include small-padding-spacer();
-}
-
-.carousel-inner {
-     box-shadow: 1px 0px 20px #000!important; 
-}
-
-#slider-thumbs a.thumbnail {
-    background-color: transparent !important;
-}
-#slider-thumbs a.thumbnail :hover {
-    background-color: transparent !important;
-}
-#slider-thumbs li :hover {
-    background-color: #c3c3c3 !important;
-}
-
-
 // Custom styles
 
 h2 {
@@ -75,15 +48,15 @@ p
     @include small-padding-spacer();
 }
 
-
-
-
-
-.hide-bullets {
-list-style:none;
-margin-left: -40px;
-margin-top:20px;
+section:nth-child(odd){
+    background-color: #efefef;
 }
+
+footer{
+    background-color: #efefef;
+    @include small-padding-spacer();
+}
+
 
 
 

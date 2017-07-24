@@ -24,7 +24,7 @@ $(document).ready(function($) {
 
 // Smooth Scroll
 $(document).on('click', 'a', function(event, BODY_WIDTH){
-    event.preventDefault();
+    // event.preventDefault();
 
     $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top + (BODY_WIDTH > 1120 ? 0 : -100)
