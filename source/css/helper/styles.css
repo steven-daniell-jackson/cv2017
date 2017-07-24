@@ -1,0 +1,248 @@
+/*!
+This is a generated stylesheet
+Written by Steven Jackson - 21 July 2016 
+
+IMPORTANT:
+DO NOT EDIT THE CSS DIRECTLY
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/* ----------- Phones ----------- */
+/* ----------- iPhone 4 and 4S ----------- */
+/* ----------- iPhone 5 and 5S ----------- */
+/* ----------- iPhone 6 ----------- */
+/* ----------- iPhone 6+ ----------- */
+/* ----------- Galaxy S3 ----------- */
+/* ----------- Galaxy S4----------- */
+/* ----------- Galaxy S5----------- */
+/* ----------- Tablets ----------- */
+/* ----------- iPad mini, 1 and 2 ----------- */
+/* ----------- iPad 3 and 4 ----------- */
+section#workExperience .experience {
+  display: none;
+}
+section#workExperience .experience.active {
+  display: block;
+}
+
+h2 {
+  padding: 7% 0 30px 0;
+  margin: 0px;
+}
+
+p {
+  border-top: 0px solid #eee;
+  padding: 20px 0;
+}
+
+header {
+  /* CUSTOMIZE THE NAVBAR
+  -------------------------------------------------- */
+  /* Special class on .container surrounding .navbar, used for positioning it into place. */
+  /* Flip around the padding for proper display in narrow viewports */
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  /* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  /* Declare heights because of positioning of img element */
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  /* Center align the text within the three columns below the carousel */
+  /* Featurettes
+  ------------------------- */
+  /* Thin out the marketing headings */
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+}
+header .navbar-default {
+  background-color: #222;
+  border-color: #e7e7e7;
+}
+header .navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #222;
+}
+header .navbar-inverse {
+  border: 0px;
+  margin: 0px;
+  padding: 10px 0px 0px;
+}
+header .navbar-right {
+  margin-right: 20px;
+}
+header .navbar-nav > li + li:after {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  bottom: 25%;
+  left: 0;
+  height: 50%;
+  width: 1px;
+}
+header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 50%;
+}
+header .navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+  background-color: #222;
+}
+header .navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+header .navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+header .navbar-wrapper .navbar .container {
+  width: auto;
+}
+header .carousel {
+  height: 500px;
+}
+header .carousel-caption {
+  z-index: 10;
+  color: #fff;
+}
+header .carousel-caption, header .carousel-caption h1 {
+  color: #fff;
+  font-size: 2em;
+  text-shadow: 1px 1px solid #000;
+}
+header .carousel-caption, header .carousel-caption p {
+  color: #fff;
+}
+header .carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+header .carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+header .marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+header .marketing h2 {
+  font-weight: normal;
+}
+header .marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+header .featurette-divider {
+  margin: 80px 0;
+  /* Space out the Bootstrap <hr> more */
+}
+header .featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (min-width: 768px) {
+  header {
+    /* Navbar positioning foo */
+    /* The navbar becomes detached from the top, so we round the corners */
+    /* Bump up size of carousel content */
+  }
+  header .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  header .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  header .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  header .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+  header .featurette-heading {
+    font-size: 50px;
+  }
+}
+@media (min-width: 992px) {
+  header .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.hide-bullets {
+  list-style: none;
+  margin-left: -40px;
+  margin-top: 20px;
+}
+
+body {
+  font: "Lato", sans-serif;
+  font-size: 1.2em;
+  color: #616161;
+}
+
+h1 {
+  color: #1c1c1c;
+  font-size: 2em;
+}
+
+h2 {
+  color: #1c1c1c;
+  font-size: 3em;
+}
+
+h3 {
+  color: #1c1c1c;
+  font-size: 1.17em;
+}
+
+h4 {
+  color: #1c1c1c;
+  font-size: 1em;
+}
+
+h5 {
+  color: #1c1c1c;
+  font-size: 0.83em;
+}
+
+h6 {
+  color: #1c1c1c;
+  font-size: 0.7em;
+}
+
+p {
+  color: #1c1c1c;
+  font-size: 1em;
+}
+
+a {
+  padding: 10px 20px !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  -webkit-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+a:hover {
+  padding: #000 !important;
+  background-color: #222 !important;
+  color: #fff !important;
+  -webkit-transition: all linear 0.6s;
+  -o-transition: all linear 0.6s;
+  transition: all linear 0.6s;
+}
