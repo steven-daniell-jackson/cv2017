@@ -19,6 +19,7 @@ $base-paragraph-font-size: 1.1em;
 
 // Colors
 $color-dark-grey: #222;
+$color-light-grey: lighten($color-dark-grey,5%);
 $blue: #0c1b5b;
 
 
@@ -30,7 +31,7 @@ $base-h3-font-size : 2.5em;
 
 // Links
 $base-text-link-color: $white;
-$base-background-link-color: $blue;
+$base-background-link-color: $color-dark-grey;
 $base-link-padding: 20px 10px;
 // Custom styles
 
@@ -47,9 +48,25 @@ p
     border-top: 0px solid #eee; 
     @include small-padding-spacer();
 }
+a {
+border-radius: 15px;font-weight: 700;
+}
+a:hover{
+text-decoration: none !important;
+}
+
 
 section:nth-child(odd){
-    background-color: #f2f2f2;
+    background: $color-light-grey;
+    color: $white;
+    h1 {color: $white; }
+    h2 {color: $white;}
+    h3 {color: $white;}
+    p { color: $white; }
+    .panel-body { color: $black}
+    a {background-color: $white !important; color:$black !important; }
+    a:hover {background-color: $color-dark-grey !important; color:$white !important; }
+    
 }
 
 section {
@@ -65,7 +82,8 @@ section {
 
 
 footer{
-    background-color: #efefef;
+    color: $white;
+    background: $color-light-grey;
     @include small-padding-spacer();
 }
 

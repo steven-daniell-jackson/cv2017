@@ -4,7 +4,6 @@ section {
         .wrapper {
            padding-top: 4%;
         }
-
         div {
             .list-group {
                 padding: 20px 0px;
@@ -20,7 +19,22 @@ section {
             }
         }
         
+        
     }
 
+    &#about-me-content {
+        p {
+            &.tabs {
+                padding: 0px;
+            }
+        }
+    }
+
+&#youtubeChannels {
+    h3 {
+        font-size: 1.6em;
+        @include small-padding-spacer();
+    }
+}
 
 }

@@ -13,7 +13,6 @@ $(document).ready(function($) {
 $.get( "https://www.googleapis.com/youtube/v3/search?key="+apiKey+"&channelId="+sanguinezorChannelID+"&part=snippet,id&order=date&maxResults=" + videoAmount, function( data ) {
 
 for (var i = 0; i < videoAmount; i++) {
-    console.log(data.items[i].id.videoId);
     $( ".sanguinezorResults" ).append("<div class='col-md-3'>"+youtubeWatchStart + data.items[i].id.videoId + youtubeWatchEnd + "</div>");
 }
  
@@ -23,7 +22,6 @@ for (var i = 0; i < videoAmount; i++) {
 $.get( "https://www.googleapis.com/youtube/v3/search?key="+apiKey+"&channelId="+epicOverwatchChannelID+"&part=snippet,id&order=date&maxResults=" + videoAmount, function( data ) {
 
 for (var i = 0; i < videoAmount; i++) {
-    console.log(data.items[i].id.videoId);
     $( ".epicOverwatchResults" ).append("<div class='col-md-3'>"+youtubeWatchStart + data.items[i].id.videoId + youtubeWatchEnd + "</div>");
 }
 
