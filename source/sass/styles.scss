@@ -52,6 +52,18 @@ section:nth-child(odd){
     background-color: #efefef;
 }
 
+section {
+    padding: 30px 0;
+    .tabs{
+        &.active {
+            display: block;
+        }
+        display: none;
+}
+}
+
+
+
 footer{
     background-color: #efefef;
     @include small-padding-spacer();

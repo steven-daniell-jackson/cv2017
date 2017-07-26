@@ -35,6 +35,16 @@ section:nth-child(odd) {
   background-color: #efefef;
 }
 
+section {
+  padding: 30px 0;
+}
+section .tabs {
+  display: none;
+}
+section .tabs.active {
+  display: block;
+}
+
 footer {
   background-color: #efefef;
   padding: 20px 0;
@@ -238,10 +248,10 @@ header .navbar-wrapper .navbar .container {
 section {
   padding: 30px 0;
 }
-section#workExperience .experience {
+section .tabs {
   display: none;
 }
-section#workExperience .experience.active {
+section .tabs.active {
   display: block;
 }
 

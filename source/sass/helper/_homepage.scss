@@ -17,13 +17,11 @@
 // Experience Section
 section {
     padding: 30px 0;
-&#workExperience {
-    .experience{
+    .tabs{
         &.active {
             display: block;
         }
         display: none;
-    }
 }
 }
 

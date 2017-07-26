@@ -31,11 +31,11 @@ $(document).on('click', 'a', function(event, BODY_WIDTH){
     }, 500);
 });
 
-function experienceChange(e) {
+function tabChange(e) {
 
-var dataAttrValue = e.getAttribute('data-experience');
+var dataAttrValue = e.getAttribute('data-tabs');
 
-$("p.experience.active").removeClass('active ').hide();
+$("p.tabs.active").removeClass('active ').hide();
 $("p." + dataAttrValue).addClass('active').show();
 
 }
