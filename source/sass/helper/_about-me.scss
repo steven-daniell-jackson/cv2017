@@ -12,7 +12,7 @@ section {
                 }
                 .list-group-item-text {
                     padding: 10px 0 20px 0;
-                    color: red;
+                    color: $color-light-grey;
                     font-weight: 700;
                 //  @include small-margin-spacer();
                 }
@@ -28,12 +28,27 @@ section {
                 padding: 0px;
             }
         }
+        .panel-body {
+            font-weight: 700;
+            text-align: center;
+        }
     }
 
 &#youtubeChannels {
     h3 {
         font-size: 1.6em;
         @include small-padding-spacer();
+    }
+}
+
+&.profile-links {
+    a {
+        padding: 0 !important;
+        background-color: transparent !important;
+        color: red !important;
+    }
+    .fa {
+        font-size: 2em;
     }
 }
 
