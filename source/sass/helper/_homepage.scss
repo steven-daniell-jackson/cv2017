@@ -18,5 +18,45 @@
     background-color: $white !important;
 }
 
+#portfolio {
+.thumbnail {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+45,ffffff+100&0.74+0,1+100 */
+background: -moz-linear-gradient(-45deg, rgba(237,237,237,0.74) 0%, rgba(237,237,237,0.86) 45%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(237,237,237,0.74) 0%,rgba(237,237,237,0.86) 45%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(237,237,237,0.74) 0%,rgba(237,237,237,0.86) 45%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ img{
+     max-height: 200px;
+     box-shadow: 5px 5px 5px #888888;
+ }
+}
+}
 
 
+.caption {
+    h4 {
+        text-align: center;
+        font-size: 1.4em;
+        color: $black !important;
+    }
+    p {
+        padding: 10px 15px;
+        font-size: 1em;
+        color: $black !important;
+        text-justify: auto;
+        text-align: center;
+
+
+    }
+}
+
+#portfolio {
+    h4 {
+color: $white;
+
+    }
+}
+
+.carousel-control {
+    border-radius: 0px;
+}

@@ -56,6 +56,8 @@ text-decoration: none !important;
 }
 
 
+
+
 section:nth-child(odd){
     background: $color-light-grey;
     color: $white;
@@ -95,4 +97,6 @@ footer{
 @import 'helper/_carousel';
 @import 'helper/_homepage';
 @import 'helper/_about-me';
+@import 'helper/_coding-experience';
+@import 'helper/_contact-me';
 @import 'helper/_base';

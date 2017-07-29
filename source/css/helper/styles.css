@@ -285,6 +285,51 @@ header .navbar-wrapper .navbar .container {
   background-color: #fff !important;
 }
 
+#portfolio .thumbnail {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+45,ffffff+100&0.74+0,1+100 */
+  background: -moz-linear-gradient(-45deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(237, 237, 237, 0.74) 0%, rgba(237, 237, 237, 0.86) 45%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdededed', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+#portfolio .thumbnail img {
+  max-height: 200px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.caption h4 {
+  text-align: center;
+  font-size: 1.4em;
+  color: #000000 !important;
+}
+.caption p {
+  padding: 10px 15px;
+  font-size: 1em;
+  color: #000000 !important;
+  text-justify: auto;
+  text-align: center;
+}
+
+#portfolio h4 {
+  color: #fff;
+}
+
+.carousel-control {
+  border-radius: 0px;
+}
+
+body#about-me-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 55% !important;
+}
+
 section#about-me-summary .wrapper {
   padding-top: 4%;
 }
@@ -317,6 +362,140 @@ section.profile-links a {
 }
 section.profile-links .fa {
   font-size: 2em;
+}
+
+body#coding-experience-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 78% !important;
+}
+
+.progress {
+  border-radius: 20px;
+  height: 25px;
+}
+
+.skill-name {
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-top: 2.5px;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+}
+
+.progress .progress-bar, .progress .progress-bar.progress-bar-default {
+  background-color: #46a546;
+}
+
+.progress .progress-bar {
+  animation-name: animateBar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.0s;
+}
+
+@keyframes animateBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*media Queries*/
+@media (min-width: 768px) and (max-width: 991px) {
+  #about-section h1 {
+    font-size: 2.0em;
+  }
+
+  .nav-pills li a {
+    font-size: 1.3em !important;
+  }
+}
+@media (max-width: 767px) {
+  #about-section h1 {
+    margin-top: 90px !important;
+    font-size: 1.5em;
+  }
+
+  .nav-pills li a {
+    font-size: 1.3em !important;
+  }
+
+  .about-me-text {
+    font-size: 1.0em;
+  }
+
+  .btn-tab .btn-overide {
+    font-size: 0.8em;
+    width: 200px;
+  }
+
+  #about-section {
+    height: 750px;
+  }
+
+  #about-section h1 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 456px) {
+  #about-section {
+    height: 730px;
+  }
+
+  .nav-pills li a {
+    font-size: 0.9em !important;
+  }
+}
+@media (max-width: 648px) {
+  #about-section {
+    height: 800px;
+  }
+}
+@media (min-width: 481px) and (max-width: 553px) {
+  #about-section {
+    height: 900px;
+  }
+}
+@media (max-width: 479px) {
+  .btn-hire {
+    margin-top: 20px !important;
+  }
+
+  .btn-contact {
+    margin-top: 10px !important;
+  }
+
+  #about-section {
+    height: 950px;
+  }
+}
+@media (max-width: 442px) {
+  #about-section {
+    height: 980px;
+  }
+}
+@media (max-width: 411px) {
+  #about-section {
+    height: 1020px;
+  }
+}
+@media (max-width: 373px) {
+  #about-section {
+    height: 1050px;
+  }
+}
+body#contact-me-page header .navbar-nav > li.active > a {
+  border-bottom: 2px solid #fff;
+  border-radius: 0 !important;
+  padding: 10px 3px !important;
+  margin: 0 20px;
+  width: 57% !important;
 }
 
 body {
